@@ -32,6 +32,7 @@ namespace Lab1a_ExceptionHandlingAndDebugging
                 string arraySizeInput = Console.ReadLine();
                 int arraySize = Convert.ToInt32(arraySizeInput);
                 int[] numsArray = new int[arraySize];
+                //Populates the numArray based on user input and then sets variables equal to the returns of all other methods
                 Populate(numsArray);
                 int sum = GetSum(numsArray);
                 int prod = GetProduct(numsArray, sum);
@@ -120,6 +121,7 @@ namespace Lab1a_ExceptionHandlingAndDebugging
                 string userInput = Console.ReadLine();
                 decimal userDecimal = Convert.ToDecimal(userInput);
                 decimal productAsDecimal = Convert.ToDecimal(product);
+                //decimal.Divide takes in first the dividend, then the divisor
                 decimal quotient = decimal.Divide(product, userDecimal);
                 return quotient;
             }
